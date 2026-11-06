@@ -5,12 +5,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  marketra-automation:
+    name: Test MARKETRA DIGITAL Automation
     runs-on: ubuntu-latest
 
     steps:
-      - name: Welcome to MARKETRA DIGITAL
-        run: echo "MARKETRA DIGITAL automation is working!"
+      - name: Welcome Message
+        run: echo "Welcome to MARKETRA DIGITAL!"
 
       - name: Brand Tagline
         run: echo "POWERING DIGITAL GROWTH"
+
+      - name: Automation Status
+        run: echo "MARKETRA DIGITAL automation is working successfully!"
+
+      - name: Display Date
+        run: date
