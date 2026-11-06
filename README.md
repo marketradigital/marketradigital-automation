@@ -1,33 +1,29 @@
 
-# MARKETRA DIGITAL
+name: MARKETRA DIGITAL Automation
 
-### POWERING DIGITAL GROWTH
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
-Welcome to the official automation workspace of MARKETRA DIGITAL.
+jobs:
+  automation-test:
+    name: First Automation Test
+    runs-on: ubuntu-latest
 
-We build smart digital solutions and automation systems to help businesses grow online.
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-## Our Automation Projects
+      - name: Welcome Message
+        run: echo "Welcome to MARKETRA DIGITAL!"
 
-- Website Deployment
-- SEO Monitoring
-- Social Media Workflow
-- Client Lead Management
-- Automated Reporting
-- AI-Powered Business Workflows
+      - name: Brand Tagline
+        run: echo "POWERING DIGITAL GROWTH"
 
-## Our Services
+      - name: Automation Status
+        run: echo "Your first automation is running successfully!"
 
-- Digital Marketing
-- Social Media Management
-- SEO Services
-- Website Design
-- Meta Ads Management
-- Creative Design
-
-## Our Mission
-
-To simplify digital processes, improve productivity, and help businesses grow with smart technology.
-
----
-**MARKETRA DIGITAL — POWERING DIGITAL GROWTH**
+      - name: Show Date
+        run: date
